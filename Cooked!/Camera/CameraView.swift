@@ -75,7 +75,7 @@ struct CameraView: UIViewControllerRepresentable {
             ])
             
             // Adjust alert height
-            let height: NSLayoutConstraint = NSLayoutConstraint(item: alertController.view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250)
+            let height = NSLayoutConstraint(item: alertController.view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250)
             alertController.view.addConstraint(height)
             
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
